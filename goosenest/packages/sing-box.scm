@@ -8,7 +8,7 @@
 (define-public sing-box-amd64
   (package
     (name "sing-box-amd64")
-    (version "1.13.9")
+    (version "1.13.11")
     (source
      (origin
        (method url-fetch)
@@ -16,7 +16,7 @@
              "https://github.com/SagerNet/sing-box/releases/download/v"
              version "/sing-box-" version "-linux-amd64-musl.tar.gz"))
        (sha256
-        (base32 "07i68cjm5k41lmsi7id679vsxzhp2vw4m5d53y8g3isfinmpfbbn"))))
+        (base32 "00nsx1dg76a40fx1rs8ykzw5fwjdpq8smys4n43z729glnyjh378"))))
     (build-system copy-build-system)
     (arguments
      (list #:install-plan #~'(("sing-box" "bin/sing-box"))))
