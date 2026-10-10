@@ -8,7 +8,7 @@
 (define-public sing-box-amd64
   (package
     (name "sing-box-amd64")
-    (version "1.14.2")
+    (version "1.14.3")
     (source
      (origin
        (method url-fetch)
@@ -16,7 +16,7 @@
              "https://github.com/SagerNet/sing-box/releases/download/v"
              version "/sing-box-" version "-linux-amd64-musl.tar.gz"))
        (sha256
-        (base32 "15y2ixsw6yirgwkgf7vg6cwajafv8aqxbq2jbp336asdz6yb8v4g"))))
+        (base32 "07xbpxl2mlr2dd03z5b3cmypmqfdsbbjiaahv3bx8d0i0kyq3z21"))))
     (build-system copy-build-system)
     (arguments
      (list #:install-plan #~'(("sing-box" "bin/sing-box"))))
@@ -34,7 +34,7 @@ Hysteria, WireGuard, and more.")
   (package
     (inherit sing-box-amd64)
     (name "sing-box-arm64")
-    (version "1.14.2")
+    (version "1.14.3")
     (source
      (origin
        (method url-fetch)
@@ -42,6 +42,6 @@ Hysteria, WireGuard, and more.")
              "https://github.com/SagerNet/sing-box/releases/download/v"
              version "/sing-box-" version "-linux-arm64-musl.tar.gz"))
        (sha256
-        (base32 "1law4p41bic8gy7qmmm9a33zgmp0pjl8pi5kfaxwwc4l9wwrflk7"))))
+        (base32 "01zf8s2crz5ms7llimh2782aw2fdg57iynw6j12xa3fz9rxddmhj"))))
     (supported-systems '("aarch64-linux"))
     (synopsis "Universal proxy platform (arm64 binary)")))
